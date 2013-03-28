@@ -1,0 +1,8 @@
+﻿ID: %Model.Id%
+CreatedDate: %Model.CreatedDate; format="dd.MM.yyyy HH:mm"%
+Name: %Model.Name%
+Price: %Model.Price; format="c"%
+Items:
+%Model.Items:{item |
+    item #%i% - %item.Key%  %if(item.Value)%enabled%else%-%endif%
+}%
